@@ -28,10 +28,13 @@ public class Produto {
     }
 
     public void setValor(double valor){
-
+        if(valor > 0){
             this.valor = valor;
-    }
 
+        }else{
+            throw new IllegalArgumentException("Valor deve ser maior que 0");
+        }
+    }
 
     public String getTamanho() {
         return tamanho;
