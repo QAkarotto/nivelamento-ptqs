@@ -1,15 +1,17 @@
 package br.com.lojinha;
 
+import br.com.lojinha.pojo.Produto;
+
 public class LojinhaApp {
     public static void main(String[] args) {
-        String joias = "100gr de ouro 50k";
-        int idade = 24;
-        double salario = 49500.99;
-        boolean resposta = false;
+        Produto produto = new Produto();
 
-        System.out.println(joias);
-        System.out.println(idade);
-        System.out.println(salario);
-        System.out.println(resposta);
+        produto.nome = "Play 4";
+        produto.valor = 4999.99;
+        produto.marca = "Sony";
+        produto.tamanho = "Médio";
+        produto.itensInclusos = "2 controle e 3 jogos";
+
+        System.out.println(produto.nome);
     }
 }
