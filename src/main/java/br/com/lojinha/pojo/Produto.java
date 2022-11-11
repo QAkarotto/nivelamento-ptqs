@@ -11,6 +11,11 @@ public class Produto {
     private Tamanho tamanho;
     private List<String> itensInclusos;
 
+    public Produto(String marcaInicial, Tamanho tamanhoInicial) {
+        this.setMarca(marcaInicial);
+        this.setTamanho(tamanhoInicial);
+    }
+
     public String getNome() {
         return nome;
     }
