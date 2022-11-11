@@ -19,6 +19,13 @@ public class LojinhaApp {
         itensInclusos.add(new ItemIncluso("Cabo de energia", 1));
         produto.setItensInclusos(itensInclusos);
 
-        System.out.println(produto.getNome()+ "\n" +produto.getMarca()+ "\n" + produto.getTamanho() + "\n" + produto.getItensInclusos());
+        System.out.println("Começando a apresentar os itens");
+
+        for (ItemIncluso itemAtual: produto.getItensInclusos()) {
+            System.out.println(itemAtual.getNome());
+            System.out.println(itemAtual.getQuantidade());
+        }
+
+        System.out.println("Acabaram-se os itens");
     }
 }
