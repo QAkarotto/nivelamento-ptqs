@@ -1,5 +1,6 @@
 package br.com.lojinha;
 
+import br.com.lojinha.enums.Tamanho;
 import br.com.lojinha.pojo.Produto;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ public class LojinhaApp {
         produto.setNome("Play 4");
         produto.setValor(4999.90);
         produto.setMarca("Sony");
-        produto.setTamanho("Médio");
+        produto.setTamanho(Tamanho.MÉDIO);
 
         List<String> itensInclusos = new ArrayList<>();
         itensInclusos.add("2 Controles");
@@ -20,5 +21,6 @@ public class LojinhaApp {
         produto.setItensInclusos(itensInclusos);
 
         System.out.println(produto.getItensInclusos().get(1));
+        System.out.println(produto.getTamanho());
     }
 }

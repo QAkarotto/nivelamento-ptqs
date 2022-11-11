@@ -1,12 +1,14 @@
 package br.com.lojinha.pojo;
 
+import br.com.lojinha.enums.Tamanho;
+
 import java.util.List;
 
 public class Produto {
     private String nome;
     private String marca;
     private double valor;
-    private String tamanho;
+    private Tamanho tamanho;
     private List<String> itensInclusos;
 
     public String getNome() {
@@ -38,11 +40,11 @@ public class Produto {
         }
     }
 
-    public String getTamanho() {
+    public Tamanho getTamanho() {
         return tamanho;
     }
 
-    public void setTamanho(String tamanho) {
+    public void setTamanho(Tamanho tamanho) {
         this.tamanho = tamanho;
     }
 
