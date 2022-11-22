@@ -32,15 +32,15 @@ public class Produto {
         this.marca = marca;
     }
 
-    public double getValor(){
+    public double getValor() {
         return this.valor;
     }
 
-    public void setValor(double valor){
-        if(valor > 0){
+    public void setValor(double valor) {
+        if (valor > 0) {
             this.valor = valor;
 
-        }else{
+        } else {
             throw new IllegalArgumentException("Valor deve ser maior que 0");
         }
     }

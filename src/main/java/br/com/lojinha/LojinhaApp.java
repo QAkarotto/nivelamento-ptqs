@@ -23,7 +23,7 @@ public class LojinhaApp {
 
         System.out.println("Começando a apresentar os itens");
 
-        for (ItemIncluso itemAtual: produto.getItensInclusos()) {
+        for (ItemIncluso itemAtual : produto.getItensInclusos()) {
             System.out.println(itemAtual.getNome());
             System.out.println(itemAtual.getQuantidade());
         }
