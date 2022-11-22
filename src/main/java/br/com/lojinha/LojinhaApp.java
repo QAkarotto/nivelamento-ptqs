@@ -3,6 +3,8 @@ package br.com.lojinha;
 import br.com.lojinha.enums.Tamanho;
 import br.com.lojinha.pojo.ItemIncluso;
 import br.com.lojinha.pojo.Produto;
+import br.com.lojinha.pojo.ProdutoImportado;
+import br.com.lojinha.pojo.ProdutoNacional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,5 +29,8 @@ public class LojinhaApp {
         }
 
         System.out.println("Acabaram-se os itens");
+
+        ProdutoImportado produtoImportado = new ProdutoImportado("Nike", Tamanho.GRANDE, 0.55);
+        produtoImportado.setValor(-99.99);
     }
 }
